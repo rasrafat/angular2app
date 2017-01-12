@@ -1,0 +1,7 @@
+{
+  "data": [
+    { "id": 1, "name": "Superman", "alterEgo": "Clark Kent", "power": "Super Strong" },
+    { "id": 2, "name": "Batman", "alterEgo": "Bruce Wayne", "power": "Really Smart" },
+    { "id": 3, "name": "Wonder Woman", "alterEgo": "Princess Diana", "power": "Super Strong & Smart" }
+  ]
+}
