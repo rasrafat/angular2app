@@ -5,11 +5,11 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-import { Hero } from './hero.model';
+import { Hero } from '../models/hero.model';
 
 @Component({
   selector: 'hero-form',
-  templateUrl: 'app/heroes/hero-form.template.html'
+  templateUrl: 'app/heroes/components/hero-form.template.html'
 })
 
 export class HeroFormComponent {

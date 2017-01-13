@@ -3,7 +3,7 @@ import { Http, Response } from '@angular/http';
 import { Headers, RequestOptions } from '@angular/http';
 
 // Add the RxJS Observable operators.
-import './rxjs-operators';
+import '../rxjs-operators';
 
 import { Observable } from 'rxjs/Observable';
 

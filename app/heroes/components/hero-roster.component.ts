@@ -4,12 +4,12 @@
 
 import { Component, OnInit } from '@angular/core';
 
-import { Hero } from './hero.model';
-import { HeroesService } from './heroes.service';
+import { Hero } from '../models/hero.model';
+import { HeroesService } from '../services/heroes.service';
 
 @Component({
   selector: 'hero-roster',
-  templateUrl: 'app/heroes/hero-roster.template.html',
+  templateUrl: 'app/heroes/components/hero-roster.template.html',
   providers: [ HeroesService ]
 })
 

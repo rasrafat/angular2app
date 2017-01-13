@@ -15,8 +15,8 @@ import { ServicesModule } from '../common/services.module';
 import { HeroesComponent } from './heroes.component';
 
 // import child components
-import { HeroRosterComponent } from './hero-roster.component';
-import { HeroFormComponent } from './hero-form.component';
+import { HeroRosterComponent } from './components/hero-roster.component';
+import { HeroFormComponent } from './components/hero-form.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, ServicesModule ],

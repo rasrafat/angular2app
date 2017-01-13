@@ -8,7 +8,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
 // import child services
-import { ApiService } from './api.service';
+import { ApiService } from './services/api.service';
 
 @NgModule({
   imports:   [ HttpModule ],
