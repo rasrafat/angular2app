@@ -9,8 +9,7 @@ import { HeroesService } from '../services/heroes.service';
 
 @Component({
   selector: 'hero-roster',
-  templateUrl: 'app/heroes/components/hero-roster.template.html',
-  providers: [ HeroesService ]
+  templateUrl: 'app/heroes/components/hero-roster.template.html'
 })
 
 export class HeroRosterComponent implements OnInit {
@@ -20,13 +19,13 @@ export class HeroRosterComponent implements OnInit {
   constructor (private heroesService: HeroesService) { }
 
   ngOnInit() {
-    this.getHeroes();
-  }
-
-  getHeroes() {
     this.heroesService.getHeroes()
                       .subscribe(
                         heroes => this.heroes = heroes,
                         error  => this.errorMessage = <any>error);
+
+    this.heroesService.addEvent.subscribe(
+      (hero: Hero) => this.heroes.push(hero)
+    );
   }
 }

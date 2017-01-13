@@ -6,6 +6,7 @@ import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 import { Hero } from '../models/hero.model';
+import { HeroesService } from '../services/heroes.service';
 
 @Component({
   selector: 'hero-form',
@@ -14,7 +15,9 @@ import { Hero } from '../models/hero.model';
 
 export class HeroFormComponent {
   powers = ['Really Smart', 'Super Flexible', 'Super Hot', 'Weather Changer'];
-  model = new Hero(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
+  model = new Hero(42, '', '');
+
+  constructor (private heroesService: HeroesService) { }
 
   @ViewChild('heroForm') heroForm: NgForm;
 
@@ -22,6 +25,8 @@ export class HeroFormComponent {
 
   onSubmit() {
     this.submitted = true;
+    this.heroesService.addHero(this.model);
+    this.newHero();
   }
 
   // TODO: Remove this when we're done
@@ -31,6 +36,6 @@ export class HeroFormComponent {
 
   newHero() {
     this.model = new Hero(42, '', '');
-    this.heroForm.reset();
+    this.heroForm.resetForm();
   }
 }
