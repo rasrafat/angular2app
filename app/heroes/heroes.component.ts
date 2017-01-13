@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+/*
+ * Heroes component - The Justice League.
+ */
 
-// Add the RxJS Observable operators.
-import '../common/rxjs-operators';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'heroes',

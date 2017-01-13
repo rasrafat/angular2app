@@ -1,3 +1,7 @@
+/*
+ * This service is a factory for the heroes api.
+ */
+
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 

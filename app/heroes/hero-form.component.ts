@@ -1,3 +1,7 @@
+/*
+ * This component is used to add a new hero to the Justice League.
+ */
+
 import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 

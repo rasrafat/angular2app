@@ -1,12 +1,18 @@
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+/*
+ * Top level app module.
+ * Import modules and components that comprise the app here.
+ */
 
+import { NgModule } from '@angular/core';
+
+// import module component
+import { AppComponent } from './app.component';
+
+// import child modules
 import { HeroesModule } from './heroes/heroes.module';
 
-import { AppComponent }  from './app.component';
-
 @NgModule({
-  imports:      [ BrowserModule, HeroesModule ],
+  imports:      [ HeroesModule ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })

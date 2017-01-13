@@ -1,14 +1,16 @@
+/*
+ * This component manages the roster of Justice League super heroes.
+ */
+
 import { Component, OnInit } from '@angular/core';
 
 import { Hero } from './hero.model';
-
-import { ApiService } from '../common/api.service';
 import { HeroesService } from './heroes.service';
 
 @Component({
   selector: 'hero-roster',
   templateUrl: 'app/heroes/hero-roster.template.html',
-  providers: [ ApiService, HeroesService ],
+  providers: [ HeroesService ]
 })
 
 export class HeroRosterComponent implements OnInit {
@@ -25,6 +27,6 @@ export class HeroRosterComponent implements OnInit {
     this.heroesService.getHeroes()
                       .subscribe(
                         heroes => this.heroes = heroes,
-                        error =>  this.errorMessage = <any>error);
+                        error  => this.errorMessage = <any>error);
   }
 }
