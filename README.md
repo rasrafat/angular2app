@@ -10,4 +10,4 @@ Proof of concept Angular 2 app.
  6. Run `npm start` to start up the application.
  
 ## Architecture
-![App Architecture](https://raw.github.com/EnemyUnited/angular2app/master/images/arch.png)
+![App Architecture](https://raw.github.com/EnemyUnited/angular2app/master/resources/arch.png)
