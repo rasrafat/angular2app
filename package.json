@@ -11,7 +11,7 @@
   },
   "keywords": [],
   "author": "Rafat Rashid",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "@angular/common": "~2.4.0",
     "@angular/compiler": "~2.4.0",

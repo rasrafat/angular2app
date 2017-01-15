@@ -10,12 +10,13 @@ import { FormsModule } from '@angular/forms';
 
 // import dependent modules
 import { ServicesModule } from '../common/services.module';
+import { ValidatorsModule } from '../common/validators.module';
 
 // import dependent services
 import { HeroesService } from './services/heroes.service';
 
 // import dependent components
-import { SingleSelectDropdownComponent } from '../common/components/singleSelectDropdown.component'
+import { SingleSelectDropdownComponent } from '../common/components/singleSelectDropdown.component';
 
 // import module component
 import { HeroesComponent } from './heroes.component';
@@ -25,10 +26,11 @@ import { HeroRosterComponent } from './components/hero-roster.component';
 import { HeroFormComponent } from './components/hero-form.component';
 
 @NgModule({
-  imports:      [
+  imports: [
     BrowserModule,
     FormsModule,
-    ServicesModule
+    ServicesModule,
+    ValidatorsModule
   ],
   declarations: [
     SingleSelectDropdownComponent,
@@ -36,8 +38,8 @@ import { HeroFormComponent } from './components/hero-form.component';
     HeroRosterComponent,
     HeroFormComponent
   ],
-  providers:    [ HeroesService ],
-  exports:      [ HeroesComponent ],
+  providers: [ HeroesService ],
+  exports:   [ HeroesComponent ],
 })
 
 export class HeroesModule { }

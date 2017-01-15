@@ -4,17 +4,21 @@
   <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
     <div class="form-group">
       <label for="name"><span class="required">*</span>Hero Name</label>
-      <input type="text" class="form-control" id="name" [(ngModel)]="model.name" name="name" required>
+      <input type="text" class="form-control" id="name"
+             [(ngModel)]="model.name" name="name" nameValidation required>
     </div>
 
     <div class="form-group">
       <label for="alterEgo">Alter Ego</label>
-      <input type="text" class="form-control" id="alterEgo" [(ngModel)]="model.alterEgo" name="alterEgo">
+      <input type="text" class="form-control" id="alterEgo"
+             [(ngModel)]="model.alterEgo" name="alterEgo" nameValidation>
     </div>
 
     <div class="form-group">
       <label for="power"><span class="required">*</span>Power</label>
-      <ix-dropdown-single [items]="powers" [options]="{itemValue: 'powerID', itemLabel: 'name'}" [(ngModel)]="model.powerID" name="powerID" required></ix-dropdown-single>
+      <ix-dropdown-single [items]="powers" [options]="{itemValue: 'powerID', itemLabel: 'name'}"
+                          [(ngModel)]="model.powerID" name="powerID" required>
+      </ix-dropdown-single>
     </div>
 
     <button type="submit" class="btn btn-default" [disabled]="!this.heroForm.form.valid">Submit</button>
