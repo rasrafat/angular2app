@@ -8,11 +8,11 @@ label span.required {
   color: red;
 }
 
-.ng-valid[required], .ng-valid.required  {
+input.ng-dirty.ng-valid {
   border-left: 5px solid #42A948; /* green */
 }
 
-.ng-dirty.ng-invalid:not(form)  {
+input.ng-dirty.ng-invalid {
   border-left: 5px solid #a94442; /* red */
 }
 

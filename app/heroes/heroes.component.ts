@@ -18,7 +18,7 @@
 export class HeroesComponent implements OnInit  {
   @Output() powers: any[];
 
-  errorMessage: string;
+  private errorMessage: string;
 
   constructor (private heroesService: HeroesService) { }
 

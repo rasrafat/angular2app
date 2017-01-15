@@ -14,10 +14,10 @@
 
     <div class="form-group">
       <label for="power"><span class="required">*</span>Power</label>
-      <ix-dropdown-single [items]="powers" [options]="{itemValue: 'powerID', itemLabel: 'name'}" [(selected)]="model.powerID"></ix-dropdown-single>
+      <ix-dropdown-single [items]="powers" [options]="{itemValue: 'powerID', itemLabel: 'name'}" [(ngModel)]="model.powerID" name="powerID" required></ix-dropdown-single>
     </div>
 
-    <button type="submit" class="btn btn-default" [disabled]="!heroForm.form.valid">Submit</button>
+    <button type="submit" class="btn btn-default" [disabled]="!this.heroForm.form.valid">Submit</button>
     <button type="button" class="btn btn-default" (click)="newHero()">New Hero</button>
   </form>
 </div>

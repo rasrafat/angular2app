@@ -36,7 +36,7 @@ export class HeroFormComponent implements OnInit {
   }
 
   newHero() {
-    this.model = new Hero(42, '', undefined);
-    this.heroForm.resetForm();
+    this.model = new Hero(42, '', null);
+    this.heroForm.reset();
   }
 }
