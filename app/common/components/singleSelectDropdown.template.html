@@ -1,0 +1,12 @@
+<div class="dropdown">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    <span class="selected-text">{{selectionLabel}}</span>
+    <span class="caret"></span>
+  </button>
+
+  <ul class="dropdown-menu" *ngIf="items !== undefined">
+    <li *ngFor="let item of items" (click)="select(item)">
+      <a href="#">{{item[options.itemLabel]}}</a>
+    </li>
+  </ul>
+</div>

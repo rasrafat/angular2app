@@ -15,3 +15,12 @@ label span.required {
 .ng-dirty.ng-invalid:not(form)  {
   border-left: 5px solid #a94442; /* red */
 }
+
+.dropdown-toggle,
+.dropdown-menu {
+  width: 100%;
+}
+
+.dropdown-toggle {
+  text-align: left;
+}
