@@ -2,10 +2,9 @@
  * Heroes component - The Justice League.
  */
 
- import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
- import { Hero } from './models/hero.model';
- import { HeroesService } from './services/heroes.service';
+import { HeroesService } from './services/heroes.service';
 
 @Component({
   selector: 'heroes',

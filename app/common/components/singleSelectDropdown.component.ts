@@ -1,4 +1,4 @@
-import { Component, ElementRef, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 
 import { AbstractValueAccessor, AccessorProvider } from '../library/abstractValueAccessor';
@@ -14,16 +14,11 @@ export class SingleSelectDropdownComponent extends AbstractValueAccessor {
   @Input() items: any[] = [];
   @Input() options: { itemValue: string; itemLabel : string };
 
-  // @Input()
-  // set ngModel (m: any) {
-  //   console.log('input set ' + m);
-  // }
-
   @Output() selectedChange: EventEmitter<any>;
 
   private selectionLabel: string;
 
-  constructor(private el: ElementRef) {
+  constructor() {
     super();
     this.selectedChange = new EventEmitter();
     this.selectionLabel = 'Make a selection';
