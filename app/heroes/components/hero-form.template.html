@@ -5,13 +5,17 @@
     <div class="form-group">
       <label for="name"><span class="required">*</span>Hero Name</label>
       <input type="text" class="form-control" id="name"
-             [(ngModel)]="model.name" name="name" nameValidation required>
+             [(ngModel)]="model.name" name="name"
+             name-validation required (errors)="nameErrors = $event">
+      <div *ngIf="nameErrors" class="alert alert-danger">{{nameErrors}}</div>
     </div>
 
     <div class="form-group">
       <label for="alterEgo">Alter Ego</label>
       <input type="text" class="form-control" id="alterEgo"
-             [(ngModel)]="model.alterEgo" name="alterEgo" nameValidation>
+             [(ngModel)]="model.alterEgo" name="alterEgo"
+             name-validation (errors)="alterEgoErrors = $event">
+      <div *ngIf="alterEgoErrors" class="alert alert-danger">{{alterEgoErrors}}</div>
     </div>
 
     <div class="form-group">

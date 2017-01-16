@@ -9,12 +9,16 @@ import {
   NameValidatorDirective
 } from './directives/validators.directive';
 
+import { ValidationErrorDirective } from './directives/validationError.directive';
+
 @NgModule({
   declarations: [
-    NameValidatorDirective
+    NameValidatorDirective,
+    ValidationErrorDirective
   ],
   exports: [
-    NameValidatorDirective
+    NameValidatorDirective,
+    ValidationErrorDirective
   ]
 })
 

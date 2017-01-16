@@ -6,12 +6,12 @@ function ValidatorProviders(directive: any) {
 }
 
 @Directive({
-  selector: '[nameValidation]',
+  selector: '[name-validation]',
   providers: ValidatorProviders(NameValidatorDirective)
 })
 export class NameValidatorDirective implements Validator {
   validate(control: AbstractControl): {[key: string]: any} {
     let regex = /^[\x20\x2C-\x2EA-Za-z]*$/;
-    return regex.test(control.value) ? null : { name: false };
+    return regex.test(control.value) ? null : { name: true };
   }
 }

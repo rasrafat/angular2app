@@ -16,6 +16,11 @@ input.ng-dirty.ng-invalid {
   border-left: 5px solid #a94442; /* red */
 }
 
+div.form-group div.alert {
+  padding: 5px 10px;
+  margin-bottom: 0px;
+}
+
 .dropdown-toggle,
 .dropdown-menu {
   width: 100%;
