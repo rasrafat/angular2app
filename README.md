@@ -8,6 +8,9 @@ Proof of concept Angular 2 app.
  4. Clone the repo (or download the .zip) onto your local machine.
  5. Run `npm install` under the parent project directory.
  6. Run `npm start` to start up the application.
- 
+
 ## Architecture
 ![App Architecture](https://raw.github.com/EnemyUnited/angular2app/master/resources/arch.png)
+
+## Screen Clipping
+![App Screen](https://raw.github.com/EnemyUnited/angular2app/master/resources/screen.png)
