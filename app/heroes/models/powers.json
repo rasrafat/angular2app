@@ -1,9 +1,18 @@
 {
-  "data": [
-    { "powerID": 1, "name": "Super Strong" },
-    { "powerID": 2, "name": "Really Smart" },
-    { "powerID": 3, "name": "Super Flexible" },
-    { "powerID": 4, "name": "Invisibility" },
-    { "powerID": 5, "name": "Telekinesis" }
-  ]
+    "data": [{
+        "powerID": 1,
+        "name": "Super Strong"
+    }, {
+        "powerID": 2,
+        "name": "Really Smart"
+    }, {
+        "powerID": 3,
+        "name": "Super Flexible"
+    }, {
+        "powerID": 4,
+        "name": "Invisibility"
+    }, {
+        "powerID": 5,
+        "name": "Telekinesis"
+    }]
 }

@@ -10,22 +10,22 @@ import { Hero } from '../models/hero.model';
 
 @Injectable()
 export class HeroesService {
-  @Output() addEvent: EventEmitter<Hero> = new EventEmitter();
+    @Output() addEvent: EventEmitter<Hero> = new EventEmitter();
 
-  constructor (private api: ApiService) { }
+    constructor(private api: ApiService) { }
 
-  private heroesUrl = 'app/heroes/models/heroes.json';
-  private powersUrl = 'app/heroes/models/powers.json';
+    private heroesUrl = 'app/heroes/models/heroes.json';
+    private powersUrl = 'app/heroes/models/powers.json';
 
-  getPowers (): Observable<any[]> {
-    return this.api.get(this.powersUrl);
-  }
+    getPowers(): Observable<any[]> {
+        return this.api.get(this.powersUrl);
+    }
 
-  getHeroes (): Observable<Hero[]> {
-    return this.api.get(this.heroesUrl);
-  }
+    getHeroes(): Observable<Hero[]> {
+        return this.api.get(this.heroesUrl);
+    }
 
-  addHero (hero: Hero): void {
-    this.addEvent.emit(hero);
-  }
+    addHero(hero: Hero): void {
+        this.addEvent.emit(hero);
+    }
 }

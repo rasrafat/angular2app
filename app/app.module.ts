@@ -12,9 +12,9 @@ import { AppComponent } from './app.component';
 import { HeroesModule } from './heroes/heroes.module';
 
 @NgModule({
-  imports:      [ HeroesModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
+    imports: [HeroesModule],
+    declarations: [AppComponent],
+    bootstrap: [AppComponent]
 })
 
 export class AppModule { }

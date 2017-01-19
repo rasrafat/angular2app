@@ -9,34 +9,34 @@ import { Hero } from '../models/hero.model';
 import { HeroesService } from '../services/heroes.service';
 
 @Component({
-  selector: 'hero-form',
-  templateUrl: 'app/heroes/components/hero-form.template.html'
+    selector: 'hero-form',
+    templateUrl: 'app/heroes/components/hero-form.template.html'
 })
 
 export class HeroFormComponent implements OnInit {
-  errorMessage: string;
-  model: Hero;
+    errorMessage: string;
+    model: Hero;
 
-  constructor (private heroesService: HeroesService) { }
+    constructor(private heroesService: HeroesService) { }
 
-  @Input() powers: any[] = [];
+    @Input() powers: any[] = [];
 
-  @ViewChild('heroForm') heroForm: NgForm;
+    @ViewChild('heroForm') heroForm: NgForm;
 
-  ngOnInit() {
-    this.model = new Hero(42, '', undefined);
-  }
+    ngOnInit() {
+        this.model = new Hero(42, '', undefined);
+    }
 
-  submitted = false;
+    submitted = false;
 
-  onSubmit() {
-    this.submitted = true;
-    this.heroesService.addHero(this.model);
-    this.newHero();
-  }
+    onSubmit() {
+        this.submitted = true;
+        this.heroesService.addHero(this.model);
+        this.newHero();
+    }
 
-  newHero() {
-    this.model = new Hero(42, '', null);
-    this.heroForm.reset();
-  }
+    newHero() {
+        this.model = new Hero(42, '', null);
+        this.heroForm.reset();
+    }
 }

@@ -5,37 +5,37 @@ export abstract class AbstractValueAccessor implements ControlValueAccessor {
     _value: any = '';
 
     get value(): any {
-      return this._value;
+        return this._value;
     };
 
     set value(v: any) {
-      if (v !== this._value) {
-        this._value = v;
-        this.onChange(v);
-      }
+        if (v !== this._value) {
+            this._value = v;
+            this.onChange(v);
+        }
     }
 
     writeValue(value: any) {
-      this._value = value;
-      this.onChange(value);
+        this._value = value;
+        this.onChange(value);
     }
 
-    onChange = (_: any) => {};
-    onTouched = () => {};
+    onChange = (_: any) => { };
+    onTouched = () => { };
 
     registerOnChange(fn: (_: any) => void): void {
-      this.onChange = fn;
+        this.onChange = fn;
     }
 
     registerOnTouched(fn: () => void): void {
-      this.onTouched = fn;
+        this.onTouched = fn;
     }
 }
 
-export function AccessorProvider(type : any) {
-  return {
-    provide: NG_VALUE_ACCESSOR,
-    useExisting: forwardRef(() => type),
-    multi: true
-  };
+export function AccessorProvider(type: any) {
+    return {
+        provide: NG_VALUE_ACCESSOR,
+        useExisting: forwardRef(() => type),
+        multi: true
+    };
 }

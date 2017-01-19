@@ -1,7 +1,18 @@
 {
-  "data": [
-    { "id": 1, "name": "Superman", "alterEgo": "Clark Kent", "powerID": 1 },
-    { "id": 2, "name": "Batman", "alterEgo": "Bruce Wayne", "powerID": 2 },
-    { "id": 3, "name": "Wonder Woman", "alterEgo": "Princess Diana", "powerID": 1 }
-  ]
+    "data": [{
+        "id": 1,
+        "name": "Superman",
+        "alterEgo": "Clark Kent",
+        "powerID": 1
+    }, {
+        "id": 2,
+        "name": "Batman",
+        "alterEgo": "Bruce Wayne",
+        "powerID": 2
+    }, {
+        "id": 3,
+        "name": "Wonder Woman",
+        "alterEgo": "Princess Diana",
+        "powerID": 1
+    }]
 }

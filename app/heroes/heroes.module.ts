@@ -26,20 +26,20 @@ import { HeroRosterComponent } from './components/hero-roster.component';
 import { HeroFormComponent } from './components/hero-form.component';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    FormsModule,
-    ServicesModule,
-    ValidatorsModule
-  ],
-  declarations: [
-    SingleSelectDropdownComponent,
-    HeroesComponent,
-    HeroRosterComponent,
-    HeroFormComponent
-  ],
-  providers: [ HeroesService ],
-  exports:   [ HeroesComponent ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        ServicesModule,
+        ValidatorsModule
+    ],
+    declarations: [
+        SingleSelectDropdownComponent,
+        HeroesComponent,
+        HeroRosterComponent,
+        HeroFormComponent
+    ],
+    providers: [HeroesService],
+    exports: [HeroesComponent],
 })
 
 export class HeroesModule { }

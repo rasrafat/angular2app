@@ -1,31 +1,26 @@
 <div class="container">
-  <h2>Hero Sign-up Form</h2>
+    <h2>Hero Sign-up Form</h2>
 
-  <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
-    <div class="form-group">
-      <label for="name"><span class="required">*</span>Hero Name</label>
-      <input type="text" class="form-control" id="name"
-             [(ngModel)]="model.name" name="name"
-             name-validation required (errors)="nameErrors = $event">
-      <div *ngIf="nameErrors" class="alert alert-danger">{{nameErrors}}</div>
-    </div>
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+        <div class="form-group">
+            <label for="name"><span class="required">*</span>Hero Name</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="model.name" name="name" name-validation required (errors)="nameErrors = $event">
+            <div *ngIf="nameErrors" class="alert alert-danger">{{nameErrors}}</div>
+        </div>
 
-    <div class="form-group">
-      <label for="alterEgo">Alter Ego</label>
-      <input type="text" class="form-control" id="alterEgo"
-             [(ngModel)]="model.alterEgo" name="alterEgo"
-             name-validation (errors)="alterEgoErrors = $event">
-      <div *ngIf="alterEgoErrors" class="alert alert-danger">{{alterEgoErrors}}</div>
-    </div>
+        <div class="form-group">
+            <label for="alterEgo">Alter Ego</label>
+            <input type="text" class="form-control" id="alterEgo" [(ngModel)]="model.alterEgo" name="alterEgo" name-validation (errors)="alterEgoErrors = $event">
+            <div *ngIf="alterEgoErrors" class="alert alert-danger">{{alterEgoErrors}}</div>
+        </div>
 
-    <div class="form-group">
-      <label for="power"><span class="required">*</span>Power</label>
-      <ix-dropdown-single [items]="powers" [options]="{itemValue: 'powerID', itemLabel: 'name'}"
-                          [(ngModel)]="model.powerID" name="powerID" required>
-      </ix-dropdown-single>
-    </div>
+        <div class="form-group">
+            <label for="power"><span class="required">*</span>Power</label>
+            <ix-dropdown-single [items]="powers" [options]="{itemValue: 'powerID', itemLabel: 'name'}" [(ngModel)]="model.powerID" name="powerID" required>
+            </ix-dropdown-single>
+        </div>
 
-    <button type="submit" class="btn btn-default" [disabled]="!this.heroForm.form.valid">Submit</button>
-    <button type="button" class="btn btn-default" (click)="newHero()">New Hero</button>
-  </form>
+        <button type="submit" class="btn btn-default" [disabled]="!this.heroForm.form.valid">Submit</button>
+        <button type="button" class="btn btn-default" (click)="newHero()">New Hero</button>
+    </form>
 </div>

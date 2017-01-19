@@ -11,8 +11,8 @@ import { HttpModule } from '@angular/http';
 import { ApiService } from './services/api.service';
 
 @NgModule({
-  imports:   [ HttpModule ],
-  providers: [ ApiService ]
+    imports: [HttpModule],
+    providers: [ApiService]
 })
 
 export class ServicesModule { }
