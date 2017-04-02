@@ -14,7 +14,10 @@ Proof of concept Angular 2 app.
 ![App Screen](https://raw.github.com/EnemyUnited/angular2app/master/resources/screen.png)
 
 ## Documentation
-Angular documentation is generated using https://compodoc.github.io/compodoc/. Generate the html pages with `npm run docs`.
+Angular documentation is generated using https://compodoc.github.io/compodoc/. Generate the html pages with:
+```
+npm run docs
+```
 
 ## Recommended IDEs
  - Atom: https://atom.io/
