@@ -14,8 +14,8 @@ export class HeroesService {
 
     constructor(private api: ApiService) { }
 
-    private heroesUrl = 'app/heroes/models/heroes.json';
-    private powersUrl = 'app/heroes/models/powers.json';
+    private heroesUrl = 'src/app/heroes/models/heroes.json';
+    private powersUrl = 'src/app/heroes/models/powers.json';
 
     getPowers(): Observable<any[]> {
         return this.api.get(this.powersUrl);

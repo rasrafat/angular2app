@@ -13,9 +13,15 @@ Proof of concept Angular 2 app.
 ## Screen Clipping
 ![App Screen](https://raw.github.com/EnemyUnited/angular2app/master/resources/screen.png)
 
+## Useful Commands
+```sh
+npm start       # start webpack dev server and watch for changes
+npm run build   # minify and build production bundles under dist/
+```
+
 ## Documentation
 Angular documentation is generated using https://compodoc.github.io/compodoc/. Generate the html pages with:
-```
+```sh
 npm run docs
 ```
 
@@ -23,3 +29,6 @@ npm run docs
  - Atom: https://atom.io/
    - And install Atom's TypeScript package: https://atom.io/packages/atom-typescript
  - Visual Code: https://code.visualstudio.com/
+
+## Reference
+ - Webpack configuration: https://v2.angular.io/docs/ts/latest/guide/webpack.html

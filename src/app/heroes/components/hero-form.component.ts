@@ -10,7 +10,7 @@ import { HeroesService } from '../services/heroes.service';
 
 @Component({
     selector: 'hero-form',
-    templateUrl: 'app/heroes/components/hero-form.template.html'
+    templateUrl: './hero-form.template.html'
 })
 
 export class HeroFormComponent implements OnInit {
