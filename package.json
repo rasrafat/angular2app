@@ -1,10 +1,11 @@
 {
-    "name": "angular-quickstart",
+    "name": "angular2app",
     "version": "1.0.0",
-    "description": "Angular 2 QuickStart",
+    "description": "Angular 2 App",
     "scripts": {
+        "docs": "compodoc -p tsconfig.json -d docs",
         "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
-        "lint": "tslint ./app/**/*.ts -t verbose",
+        "lint": "tslint ./app/**/*.ts -t verbose || true",
         "lite": "lite-server",
         "tsc": "tsc",
         "tsc:w": "tsc -w"
@@ -28,16 +29,18 @@
         "zone.js": "^0.7.4"
     },
     "devDependencies": {
-        "concurrently": "^3.1.0",
-        "lite-server": "^2.2.2",
-        "typescript": "~2.0.10",
+        "@types/jasmine": "^2.5.36",
+        "@types/node": "^6.0.46",
         "canonical-path": "0.0.2",
+        "compodoc": "0.0.41",
+        "concurrently": "^3.1.0",
         "http-server": "^0.9.0",
-        "tslint": "^3.15.1",
+        "lite-server": "^2.2.2",
         "lodash": "^4.16.4",
         "rimraf": "^2.5.4",
-        "@types/node": "^6.0.46",
-        "@types/jasmine": "^2.5.36"
+        "tslint": "^3.15.1",
+        "typedoc": "^0.5.9",
+        "typescript": "~2.0.10"
     },
     "repository": {}
 }
