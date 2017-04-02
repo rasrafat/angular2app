@@ -5,7 +5,7 @@ import { AbstractValueAccessor, AccessorProvider } from '../library/abstractValu
 
 @Component({
     selector: 'ix-dropdown-single[ngModel]',
-    templateUrl: 'app/common/components/singleSelectDropdown.template.html',
+    templateUrl: './singleSelectDropdown.template.html',
     providers: [AccessorProvider(SingleSelectDropdownComponent)],
     host: { '(selectedChange)': 'onChange($event)' },
 })

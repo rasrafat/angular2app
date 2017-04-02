@@ -1,4 +1,6 @@
-app/out/
+compiled/
+dist/
 docs/
 .DS_Store
 node_modules/
+npm-debug.log

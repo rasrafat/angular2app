@@ -9,7 +9,7 @@ import { HeroesService } from '../services/heroes.service';
 
 @Component({
     selector: 'hero-roster',
-    templateUrl: 'app/heroes/components/hero-roster.template.html'
+    templateUrl: './hero-roster.template.html'
 })
 
 export class HeroRosterComponent implements OnInit {
