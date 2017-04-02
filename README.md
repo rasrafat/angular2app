@@ -15,8 +15,8 @@ Proof of concept Angular 2 app.
 
 ## Useful Commands
 ```sh
-npm start     # start webpack dev server and watch for changes
-npm run build # minify and build production bundles under dist/
+npm start       # start webpack dev server and watch for changes
+npm run build   # minify and build production bundles under dist/
 ```
 
 ## Documentation
